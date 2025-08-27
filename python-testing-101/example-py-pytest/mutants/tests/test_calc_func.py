@@ -64,3 +64,23 @@ def test_maximum(a, b, expected):
 ])
 def test_minimum(a, b, expected):
     assert minimum(a, b) == expected
+
+
+# ✅ Novo: testes para a função logarithm
+def test_logarithm_base_10():
+    assert logarithm(100, 10) == 2.0
+
+
+def test_logarithm_base_e():
+    assert logarithm(math.e, math.e) == 1.0
+
+
+def test_logarithm_invalid_base():
+    with pytest.raises(ValueError):
+        logarithm(100, 1)
+
+    with pytest.raises(ValueError):
+        logarithm(100, -2)
+
+    with pytest.raises(ValueError):
+        logarithm(-5, 10)

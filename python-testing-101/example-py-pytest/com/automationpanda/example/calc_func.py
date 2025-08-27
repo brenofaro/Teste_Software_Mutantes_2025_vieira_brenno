@@ -34,16 +34,3 @@ def sign(a):
         return "zero"
     else:
         return "negative"
-
-import math
-
-def logarithm(a, base=10):
-    """
-    Retorna o logaritmo de 'a' na base especificada.
-    Levanta ValueError se 'a' <= 0 ou base <= 1.
-    """
-    if a <= 0:
-        raise ValueError("O logaritmo só é definido para números positivos.")
-    if base <= 1:
-        raise ValueError("A base do logaritmo deve ser maior que 1.")
-    return math.log(a, base)
