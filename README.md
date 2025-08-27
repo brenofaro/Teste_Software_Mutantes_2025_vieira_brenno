@@ -12,6 +12,20 @@ git clone https://github.com/urllib3/urllib3.git
 python -m venv .venv
 ```
 
+### Ativar ambiente virtual
+
+Windows:
+
+```bash
+.\.venv\Scripts\activate
+```
+
+Linux:
+
+```bash
+source .venv/bin/activate
+```
+
 ### Instalar dependências
 
 ```bash
