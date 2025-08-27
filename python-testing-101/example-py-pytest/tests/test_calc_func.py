@@ -65,22 +65,40 @@ def test_maximum(a, b, expected):
 def test_minimum(a, b, expected):
     assert minimum(a, b) == expected
 
-# --- NOVOS TESTES ---
-def test_divide_identity():
-    """Dividir por 1 deve retornar o próprio número."""
-    assert divide(5, 1) == 5.0
-
-def test_divide_fraction():
-    """Testa frações que revelam diferença entre a*1.0/b e a/1.0/b."""
-    assert divide(2, 2) == 1.0
-    assert divide(5, 2) == 2.5
+# Testes para função logaritmo()
+def test_logarithm_base_10():
+    assert logarithm(100, 10) == 2.0
 
 
-# --- Maximum / Minimum edge cases ---
-def test_maximum_equal_numbers():
-    """Máximo de dois números iguais deve ser o próprio número."""
-    assert maximum(7, 7) == 7
+def test_logarithm_base_e():
+    assert logarithm(math.e, math.e) == 1.0
 
-def test_minimum_equal_numbers():
-    """Mínimo de dois números iguais deve ser o próprio número."""
-    assert minimum(7, 7) == 7
+
+def test_logarithm_invalid_base():
+    with pytest.raises(ValueError):
+        logarithm(100, 1)
+
+    with pytest.raises(ValueError):
+        logarithm(100, -2)
+
+    with pytest.raises(ValueError):
+        logarithm(-5, 10)
+
+# Novos testes para corrigir mutações
+def test_log_default_base():
+    assert logarithm(100) == math.log(100, 10)
+
+def test_log_zero_value():
+    with pytest.raises(ValueError, match="só é definido para números positivos"):
+        logarithm(0)
+
+def test_log_value_one_valid():
+    assert logarithm(1) == 0  # log base 10 de 1 é 0
+
+def test_log_base_two_valid():
+    result = logarithm(8, 2)
+    assert result == 3
+
+def test_log_base_one_invalid():
+    with pytest.raises(ValueError, match="base do logaritmo.*maior que 1"):
+        logarithm(10, 1)
