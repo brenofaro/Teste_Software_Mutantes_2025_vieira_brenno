@@ -1,0 +1,28 @@
+# Dependências principais para execução
+urllib3
+
+# Dependências para testes
+pytest
+pytest-cov
+pytest-socket
+pytest-timeout
+mutmut
+
+# Dependências para funcionalidades de teste
+coverage
+cryptography
+h2
+httpx
+hypercorn
+pyopenssl
+pysocks
+trustme
+trio
+anyio
+
+# Dependências para servidor de teste
+quart
+quart-trio
+
+# Dependências para SSL e segurança
+idna
