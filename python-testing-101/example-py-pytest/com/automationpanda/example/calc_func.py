@@ -26,11 +26,3 @@ def maximum(a, b):
 
 def minimum(a, b):
     return a if a <= b else b
-
-def sign(a):
-    if a > 0:
-        return "positive"
-    elif a == 0:
-        return "zero"
-    else:
-        return "negative"

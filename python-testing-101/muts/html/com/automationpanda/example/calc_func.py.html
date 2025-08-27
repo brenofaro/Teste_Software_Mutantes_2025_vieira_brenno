@@ -1,0 +1,109 @@
+<html><body><h1>com/automationpanda/example/calc_func.py</h1>Killed 5 out of 15 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 8</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -17,7 +17,7 @@
+ 
+ def divide(a, b):
+     # automatically raises ZeroDivisionError
+-    return a * 1.0 / b
++    return a / 1.0 / b
+ 
+ 
+ def maximum(a, b):
+</pre><h3>Mutant 11</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -21,7 +21,7 @@
+ 
+ 
+ def maximum(a, b):
+-    return a if a >= b else b
++    return a if a > b else b
+ 
+ 
+ def minimum(a, b):
+</pre><h3>Mutant 12</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -25,7 +25,7 @@
+ 
+ 
+ def minimum(a, b):
+-    return a if a <= b else b
++    return a if a < b else b
+ 
+ def sign(a):
+     if a > 0:
+</pre><h3>Mutant 13</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -28,7 +28,7 @@
+     return a if a <= b else b
+ 
+ def sign(a):
+-    if a > 0:
++    if a >= 0:
+         return "positive"
+     elif a == 0:
+         return "zero"
+</pre><h3>Mutant 14</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -28,7 +28,7 @@
+     return a if a <= b else b
+ 
+ def sign(a):
+-    if a > 0:
++    if a > 1:
+         return "positive"
+     elif a == 0:
+         return "zero"
+</pre><h3>Mutant 15</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -29,7 +29,7 @@
+ 
+ def sign(a):
+     if a > 0:
+-        return "positive"
++        return "XXpositiveXX"
+     elif a == 0:
+         return "zero"
+     else:
+</pre><h3>Mutant 16</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -30,7 +30,7 @@
+ def sign(a):
+     if a > 0:
+         return "positive"
+-    elif a == 0:
++    elif a != 0:
+         return "zero"
+     else:
+         return "negative"
+</pre><h3>Mutant 17</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -30,7 +30,7 @@
+ def sign(a):
+     if a > 0:
+         return "positive"
+-    elif a == 0:
++    elif a == 1:
+         return "zero"
+     else:
+         return "negative"
+</pre><h3>Mutant 18</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -31,7 +31,7 @@
+     if a > 0:
+         return "positive"
+     elif a == 0:
+-        return "zero"
++        return "XXzeroXX"
+     else:
+         return "negative"
+ 
+</pre><h3>Mutant 19</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -33,5 +33,5 @@
+     elif a == 0:
+         return "zero"
+     else:
+-        return "negative"
++        return "XXnegativeXX"
+ 
+</pre></body></html>

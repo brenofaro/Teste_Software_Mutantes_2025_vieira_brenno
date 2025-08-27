@@ -64,3 +64,23 @@ def test_maximum(a, b, expected):
 ])
 def test_minimum(a, b, expected):
     assert minimum(a, b) == expected
+
+# --- NOVOS TESTES ---
+def test_divide_identity():
+    """Dividir por 1 deve retornar o próprio número."""
+    assert divide(5, 1) == 5.0
+
+def test_divide_fraction():
+    """Testa frações que revelam diferença entre a*1.0/b e a/1.0/b."""
+    assert divide(2, 2) == 1.0
+    assert divide(5, 2) == 2.5
+
+
+# --- Maximum / Minimum edge cases ---
+def test_maximum_equal_numbers():
+    """Máximo de dois números iguais deve ser o próprio número."""
+    assert maximum(7, 7) == 7
+
+def test_minimum_equal_numbers():
+    """Mínimo de dois números iguais deve ser o próprio número."""
+    assert minimum(7, 7) == 7

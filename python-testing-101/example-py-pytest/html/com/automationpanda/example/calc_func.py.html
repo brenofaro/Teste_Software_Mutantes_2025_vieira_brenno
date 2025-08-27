@@ -1,0 +1,32 @@
+<html><body><h1>com/automationpanda/example/calc_func.py</h1>Killed 12 out of 15 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 8</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -17,7 +17,7 @@
+ 
+ def divide(a, b):
+     # automatically raises ZeroDivisionError
+-    return a * 1.0 / b
++    return a / 1.0 / b
+ 
+ 
+ def maximum(a, b):
+</pre><h3>Mutant 11</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -21,7 +21,7 @@
+ 
+ 
+ def maximum(a, b):
+-    return a if a >= b else b
++    return a if a > b else b
+ 
+ 
+ def minimum(a, b):
+</pre><h3>Mutant 12</h3><pre>--- com/automationpanda/example/calc_func.py
++++ com/automationpanda/example/calc_func.py
+@@ -25,5 +25,5 @@
+ 
+ 
+ def minimum(a, b):
+-    return a if a <= b else b
++    return a if a < b else b
+ 
+</pre></body></html>
