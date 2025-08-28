@@ -3,3 +3,6 @@
 html
 .mutmut-cache
 mutants
+urllib3
+html
+.mutmut-cache

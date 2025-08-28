@@ -89,7 +89,7 @@ def test_log_default_base():
     assert logarithm(100) == math.log(100, 10)
 
 def test_log_zero_value():
-    with pytest.raises(ValueError, match="só é definido para números positivos"):
+    with pytest.raises(ValueError, match=r"^O logaritmo só é definido para números positivos\."):
         logarithm(0)
 
 def test_log_value_one_valid():
@@ -100,5 +100,5 @@ def test_log_base_two_valid():
     assert result == 3
 
 def test_log_base_one_invalid():
-    with pytest.raises(ValueError, match="base do logaritmo.*maior que 1"):
+    with pytest.raises(ValueError, match=r"^A base do logaritmo deve ser maior que 1\."):
         logarithm(10, 1)
