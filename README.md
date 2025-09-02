@@ -60,7 +60,7 @@ Este tutorial tem como objetivo documentar todas as etapas realizadas na ativida
 Abaixo está o link do repositório github do projeto e vídeo tutorial respectivamente:
 
 - <https://github.com/brenofaro/Teste_Software_Mutantes_2025_vieira_brenno.git>
-- <https://drive.google.com/file/d/1jcKJmm-JDo3FetCCzgk-cCAk1BIvrUYt/view?usp=drive_link>
+- <https://drive.google.com/file/d/1J7h5H0LGYI7AC5iKur01EMzZBJFJ9gxY/view?usp=sharing>
 
 
 ## 2. <a name="_v2y9taphn6ep"></a>Projeto
